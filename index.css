@@ -44,7 +44,31 @@ nav a{
     border-bottom: var(--csik);
 } */
 
-@media screen and (max-width:1024px){
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+section div{
+    /* background-image: url(https://jooedvarddeveloper.github.io/blackwhite/images/falling.svg); */
+    /* background-image: url(pictures/falling.svg); */
+    padding-block: 32px;
+}
+
+section div a{
+    text-decoration: none;
+    width: 250px;
+}
+
+.kis-kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+@media screen and (max-width:600px){
     header, nav{
         grid-template-columns: 1fr;
         gap: 3px;
