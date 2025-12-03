@@ -44,25 +44,73 @@ nav a{
     border-bottom: var(--csik);
 } */
 
-section{
+section.felso{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-
 }
 
-section div{
+section.felso div{
     /* background-image: url(https://jooedvarddeveloper.github.io/blackwhite/images/falling.svg); */
     /* background-image: url(pictures/falling.svg); */
     padding-block: 32px;
 }
 
-section div a{
+section.felso div a{
     text-decoration: none;
     width: 250px;
 }
 
+section.felso div h2{
+    letter-spacing: 10px;
+    width: 100%;
+    text-align: center;
+}
+
 .kis-kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    max-width: 310px;
+    margin: auto;
+}
+
+.kis-kepek span{
+    border: var(--csik);
+    padding: 0;
+    text-align: center;
+    /* padding-block: 40px; */
+    width: 100px;
+    height: 100px;
+    /* font-size: 48px; */
+    text-align: center;
+    padding-block: 20px;
+    vertical-align: middle;
+}
+
+div.kis-kepek :nth-child(1),
+div.kis-kepek :nth-child(2){
+    font-size: 48px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}
+
+div.kis-kepek :nth-child(3){
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* .kis-kepek:nth-child(1),
+.kis-kepek:nth-child(2){
+    width: 200px;
+    height: 200px;
+} */
+
+section.also{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
