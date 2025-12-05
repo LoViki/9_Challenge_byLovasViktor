@@ -19,8 +19,71 @@
         </nav>
     </header>
     <section class="felso">
-        <div>
-            <svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+        <div class="falling">
+            <!-- <svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg"> -->
+            <rect width="100%" height="100%" fill="#0b0e1a" />
+
+            <g fill="white" opacity="0.9">
+
+                <circle cx="50" cy="0" r="2">
+                    <animate attributeName="cy" from="-10" to="610" dur="6s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="50" to="60" dur="3s" repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="150" cy="0" r="3">
+                    <animate attributeName="cy" from="-20" to="620" dur="7s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="150" to="140" dur="4s" repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="250" cy="0" r="2">
+                    <animate attributeName="cy" from="-15" to="610" dur="5.5s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="250" to="260" dur="3s" repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="350" cy="0" r="4">
+                    <animate attributeName="cy" from="-25" to="620" dur="8s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="350" to="330" dur="4s" repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="450" cy="0" r="3">
+                    <animate attributeName="cy" from="-20" to="630" dur="6.5s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="450" to="455" dur="3s" repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="550" cy="0" r="2">
+                    <animate attributeName="cy" from="-18" to="610" dur="5s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="550" to="565" dur="3s" repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="650" cy="0" r="4">
+                    <animate attributeName="cy" from="-25" to="620" dur="8.5s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="650" to="640" dur="4s" repeatCount="indefinite" />
+                </circle>
+
+                <circle cx="750" cy="0" r="3">
+                    <animate attributeName="cy" from="-20" to="630" dur="7s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="750" to="760" dur="3.5s" repeatCount="indefinite" />
+                </circle>
+
+
+                <circle cx="120" cy="0" r="1.5">
+                    <animate attributeName="cy" from="-10" to="600" dur="4s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="120" to="130" dur="2s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="300" cy="0" r="1.5">
+                    <animate attributeName="cy" from="-10" to="610" dur="3.8s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="300" to="310" dur="2s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="480" cy="0" r="1.5">
+                    <animate attributeName="cy" from="-10" to="620" dur="4.2s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="480" to="470" dur="2s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="620" cy="0" r="1.5">
+                    <animate attributeName="cy" from="-10" to="600" dur="3.6s" repeatCount="indefinite" />
+                    <animate attributeName="cx" from="620" to="630" dur="2s" repeatCount="indefinite" />
+                </circle>
+            </g>
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg">
                 <rect width="100%" height="100%" fill="#0b0e1a" />
 
                 <g fill="white" opacity="0.9">
@@ -85,13 +148,17 @@
                 </g>
             </svg>
         </div>
-        <div>
+        <div class="felsojobb">
             <h1>Szia,</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto harum mollitia ullam, nisi at consequatur
                 aut pariatur rem maxime veritatis quos doloremque facilis cumque id atque unde. Accusamus, doloremque
-                quia!</p>
+                quia!
+            </p>
             <a href="#">Click!</a>
+            <!-- <button href="#">Click!</button> -->
         </div>
+    </section>
+    <section class="kozepso">
         <div>
             <h2>Ahol A Mesék Kezdődnek</h2>
             <div class="kis-kepek">
@@ -101,10 +168,13 @@
             </div>
 
         </div>
-        <div>
+        <div class="kozepsojobb">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vel incidunt similique nihil! Ipsa
                 pariatur, maxime totam maiores vitae laudantium numquam repellat consectetur quia fugiat qui eius odit
-                blanditiis atque.</p>
+                blanditiis atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nisi nulla molestiae,
+                temporibus, necessitatibus eos voluptate nihil reiciendis non voluptates veniam autem minima. Ducimus
+                corrupti aut nobis hic quaerat excepturi!
+            </p>
         </div>
     </section>
     <section class="also">
@@ -120,22 +190,19 @@
             <span>COLD</span>
             <span>small</span>
         </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorum porro delectus quia
-                distinctio eum id officia nam quas, consequuntur, ratione numquam modi perspiciatis dicta sed sapiente
-                itaque possimus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab iste dolore
-                tempore, corrupti nobis repudiandae maiores exercitationem saepe, laboriosam, dolorum nemo doloribus
-                nesciunt quibusdam temporibus similique vero molestiae ducimus! Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Provident doloribus ad autem, perspiciatis esse consectetur voluptates, iusto, facere
-                expedita a voluptas! Dolore labore repellendus dolorum facilis tempore dolorem obcaecati. Odit.</p>
-        </div>
-        <div>
+        <!-- <article> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorum porro delectus quia
+            distinctio eum id officia nam quas, consequuntur, ratione numquam modi perspiciatis dicta sed sapiente
+            itaque possimus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab iste dolore
+            tempore, corrupti nobis repudiandae maiores exercitationem saepe, laboriosam, dolorum nemo doloribus
+            nesciunt quibusdam temporibus similique vero molestiae ducimus! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Provident doloribus ad autem, perspiciatis esse consectetur voluptates, iusto, facere
+            expedita a voluptas! Dolore labore repellendus dolorum facilis tempore dolorem obcaecati. Odit.
+        </p>
 
-        </div>
-        <div>
-
-        </div>
+        <!-- </article> -->
     </section>
+
     <footer>
         <div>Minden Jog fenntartva!</div>
         <nav>

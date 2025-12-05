@@ -1,8 +1,8 @@
-:root{
-    --csik:1px solid black
+:root {
+    --csik: 1px solid red;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,129 +11,410 @@
 
 }
 
-body{
+body {
     padding-inline: 36px;
     padding-block: 36px;
 }
 
-header{
+header {
+    position: sticky;
+    top: 0px;
+    background-color: white;
     display: grid;
     grid-template-columns: auto 1fr;
     border-bottom: var(--csik);
 }
 
-nav{
+nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: fit-content;
 }
 
-header div{
+header div {
     font-size: 32px;
     font-weight: 600;
     padding: 10px 10px 10px 20px;
     border-right: var(--csik);
 }
 
-nav a{
+
+nav a {
     text-decoration: none;
     text-align: center;
     padding: 20px 8px 8px 8px
 }
+
 /* nav a, header div{
     border-bottom: var(--csik);
 } */
 
-section.felso{
+.felso,
+.kozepso {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 64px;
+    padding-block: 60px;
+    align-content: center;
 }
 
-section.felso div{
-    /* background-image: url(https://jooedvarddeveloper.github.io/blackwhite/images/falling.svg); */
-    /* background-image: url(pictures/falling.svg); */
-    padding-block: 32px;
+section.felso div {
+    max-height: 350px;
+    height: 350px;
 }
 
-section.felso div a{
-    text-decoration: none;
-    width: 250px;
+.kozepso {
+    border-bottom: var(--csik);
 }
 
-section.felso div h2{
+div.felsojobb {
+    padding-left: 32px;
+    display: grid;
+}
+
+.falling svg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.felso div h1 {
     letter-spacing: 10px;
     width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.felso div p {
+    /* letter-spacing: 10px; */
+    font-size: 24px;
+    max-width: 36ch;
+    text-align: left;
+    border-top: var(--csik);
+    padding-block: 20px;
+    /* padding-bottom: 0; */
+}
+
+.felso div a {
+    /* position: sticky;
+    bottom: 0;
+    left: 0; */
+    /* margin-bottom: 0; */
+    text-decoration: none;
+    max-width: 250px;
+    /* width: 100%; */
+    /* background-color: black;
+    color: white; */
+    padding-block: 12px;
+    /* padding-inline: m; */
+    border-bottom: var(--csik);
+    margin-top: 20px;
     text-align: center;
 }
 
-.kis-kepek{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
-    max-width: 310px;
-    margin: auto;
+
+.felso div a:hover {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    /* min-width: 250px; */
+    background-color: black;
+    color: white;
+
 }
 
-.kis-kepek span{
+/* div.felsojobb {
+    max-height: 200px;
+} */
+
+/* .kozepso div{
+    ;
+} */
+
+.kis-kepek {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    max-width: fit-content;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+.kis-kepek span {
     border: var(--csik);
     padding: 0;
     text-align: center;
     /* padding-block: 40px; */
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     /* font-size: 48px; */
-    text-align: center;
+    /* text-align: center;
     padding-block: 20px;
-    vertical-align: middle;
+    vertical-align: middle; */
+    /* align-items: center; */
 }
 
 div.kis-kepek :nth-child(1),
-div.kis-kepek :nth-child(2){
+div.kis-kepek :nth-child(2) {
     font-size: 48px;
     /* text-align: center; */
     /* vertical-align: middle; */
+    display: grid;
+    align-items: center;
 }
 
-div.kis-kepek :nth-child(3){
+div.kis-kepek :nth-child(3) {
     background-color: black;
     color: white;
-    font-size: 12px;
-    border-radius: 5px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-/* .kis-kepek:nth-child(1),
-.kis-kepek:nth-child(2){
-    width: 200px;
-    height: 200px;
-} */
-
-section.also{
+    font-size: 14px;
+    border-radius: 10px;
+    /* text-align: center;
+    vertical-align: middle; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    line-height: 20px;
+}
+
+div h2 {
+    font-size: 32px;
+    letter-spacing: 15px;
+    text-align: center;
+    line-height: 60px;
+    padding-bottom: 30px;
+}
+
+.kozepsojobb {
+    max-width: 300px;
+    padding-left: 32px;
+    border-left: var(--csik);
+}
+
+section.also {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* column-width: 100px; */
+    max-width: 80vw;
+    margin: auto;
+    /* align-content: center; */
+    /* height: 200px; */
+    gap: 20px;
+    padding-block: 48px;
+    padding-inline: 48px;
+    /* text-align: center; */
+    align-content: center;
+
+}
+
+.also div {
+    max-width: 250px;
+    padding-inline: 50px;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+
+}
+
+.also div span:nth-child(1) {
+    font-size: 50px;
+    /* text-align: center;
+    align-content: center; */
+}
+
+.also div span:nth-child(2) {
+    font-size: 16px;
+    initial-letter: -2px;
+}
+
+section.also p {
+    max-width: 250px;
+    /* letter-spacing: 0ch; */
+    font-size: 16px;
+    letter-spacing: -2px;
+    border-left: var(--csik);
+    padding-left: 20px;
+    text-align: left;
+}
+
+footer {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr auto;
+
+    justify-content: space-between;
+    /* a két oszlop tartalmát széthúzza */
+    align-items: center;
+    /* függőleges középre igazítás */
+
+    background-color: white;
+    border-top: var(--csik);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    bottom: 0px;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* max-width: fit-content; */
+    max-width: 100%;
+    /* justify-content: end; */
+    justify-content: right;
+    /* jobbra igazítás */
+    gap: 10px;
+    /* kis térköz a linkek között */
+
+}
+
+footer nav a {
+    font-weight: 800;
+    text-align: left;
+    border-left: var(--csik);
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 10px;
 }
 
 
-@media screen and (max-width:600px){
-    header, nav{
+footer div {
+    text-decoration: none;
+    text-align: left;
+    padding: 3px;
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    header,
+    nav {
         grid-template-columns: 1fr;
         gap: 3px;
         /* text-align: left; */
         padding-block: 3px;
     }
-    header div, 
-    nav a{
+
+    /* header{
+        position: sticky;
+        top: 0px;
+    } */
+
+    header div,
+    nav a {
         text-align: left;
         /* padding-block: 5px;
         padding-left: 5px; */
         padding: 0;
     }
-    header div{
+
+    header div {
         border: none;
         /* padding-block: 20px; */
         border-bottom: var(--csik);
         padding-bottom: 10px;
     }
+
+    .felso,
+    .kozepso {
+        grid-template-columns: 1fr;
+        /* margin: auto; */
+        /* margin-bottom: 20px; */
+        max-width: 100%;
+    }
+
+    div.felsojobb {
+        padding: 0;
+    }
+
+    div.felsojobb h1,
+    div.felsojobb p,
+    div.felsojobb a {
+        max-width: 100%;
+        padding-left: 0px;
+    }
+
+    .felso div a,
+    .felso div p {
+        max-width: 100%;
+        /* padding: 0px; */
+    }
+
+    .kis-kepek {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "e m"
+            "h h";
+        max-width: 100%;
+    }
+
+    .kis-kepek span {
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+        height: 125px;
+    }
+
+    .kis-kepek :nth-child(1) {
+        grid-area: e;
+    }
+
+    .kis-kepek :nth-child(2) {
+        grid-area: m;
+    }
+
+    .kis-kepek :nth-child(3) {
+        grid-area: h;
+        border-radius: 0px;
+        border-radius: 0;
+    }
+
+    section.also {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    .kozepsojobb {
+        /* width: 100%; */
+        max-width: 100%;
+        /* padding: 0px; */
+        /* margin: 0px; */
+    }
+
+    saection.also {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    section.also p {
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    footer,
+    footer nav {
+        position: sticky;
+        bottom: 0;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+
+    }
+
+    footer nav a {
+        border: none;
+        border-top: var(--csik);
+
+    }
+
+
 }
